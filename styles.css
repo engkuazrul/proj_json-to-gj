@@ -1,0 +1,53 @@
+/* container */
+.container {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px dashed rgb(99, 96, 96, 0.5);
+  border-radius: 1rem;
+}
+
+/* form */
+.form-group {
+  display: flex;
+  flex-flow: column;
+}
+
+.form-group label {
+  text-align: center;
+  margin: 5px 10px 5px 0;
+}
+
+.form-group input {
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+}
+
+.form-group button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+/* spinner */
+.loading {
+  display: flex;
+  justify-content: center;
+}
+
+.loading::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 10px solid #dddddd;
+  border-top-color: #009579;
+  border-radius: 50%;
+  animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+  to {
+      transform: rotate(1turn);
+  }
+}
